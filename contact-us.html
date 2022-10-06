@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Need To add viewport for user friendliness mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Calling the Stylesheet into the head of the site in the same folder of current page-->
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="main.js">
+<!-- Creating the title of the site-->
+<title>Contact Us</title>
+
+</head>
+<body>
+
+	<!-- This section will be the navigation -->
+	<section>
+		<nav>
+
+			<ul>
+				<li><a href="contact-us.html">Contact Us</a></li>
+				<li><a href="thirdpage.html">Third Page</a></li>
+				<li><a href="secondpage.html">Second Page</a></li>
+				<li><a href="firstpage.html">First Page</a></li>
+				<li><a href="homepage.html">Home</a></li>
+			</ul>
+		</nav>
+	</section>
+
+
+	<header>
+		<img class="navimage" src="download.jpg" alt="Header Image">
+	</header>
+
+
+
+	<section class="mainsection">
+		<div style="text-align: center;">
+			<h1>Contact Us</h1>
+		</div>
+		<div class="customform">
+            <h2>Please reach out to us for help</h2>
+			<form action="thankyou.html">
+				<label for="fname">First name:</label><br>
+				<input type="text" id="fname" name="fname" placeholder="Garrett" required><br><br>
+
+				<label for="lname">Last name:</label><br>
+				<input type="text" id="lname" name="lname" placeholder="Frye" required><br><br>
+
+				<span>Gender: </span>
+				<label for="mgender">Male</label>
+				<input type="radio" id="mgender" name="gender" value="Male">
+				<label for="fgender">Female</label>
+				<input type="radio" id="fgender" name="gender" value="Female"><br /><br />
+
+                <span>Classes Enrolled:</span><br />
+				<input type="checkbox" id="math" name="math" value="Math">
+				<label for="math"> Math</label><br>
+				<input type="checkbox" id="science" name="science" value="Science">
+				<label for="science"> Science</label><br>
+				<input type="checkbox" id="history" name="history" value="History">
+				<label for="history"> History</label>
+				<br><br><input type="submit" value="Submit">
+			</form>
+		</div>
+	</section>
+
+	<footer>
+		<p id="jstest"></p>
+	</footer>
+
+</body>
+</html>
+<script type="text/javascript" src="main.js?v=1.2"></script>

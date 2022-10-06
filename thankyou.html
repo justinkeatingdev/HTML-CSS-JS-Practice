@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- Need To add viewport for user friendliness mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Calling the Stylesheet into the head of the site in the same folder of current page-->
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="main.js">
+	<!-- Creating the title of the site-->
+	<title>Thank You</title>
+
+</head>
+
+<body>
+
+	<!-- This section will be the navigation -->
+	<section>
+		<nav>
+
+			<ul>
+				<li><a href="contact-us.html">Contact Us</a></li>
+				<li><a href="thirdpage.html">Third Page</a></li>
+				<li><a href="secondpage.html">Second Page</a></li>
+				<li><a href="firstpage.html">First Page</a></li>
+				<li><a href="homepage.html">Home</a></li>
+			</ul>
+		</nav>
+	</section>
+
+
+	<header>
+		<img class="navimage" src="download.jpg" alt="Header Image">
+	</header>
+
+	<section class="mainsection">
+		<div style="text-align: center;">
+			<h1>Thank You for Reaching Out to Us</h1>
+		</div>
+		<div>
+			<p id="fullname"></p>
+			<p id="genderselected"></p>
+			<p id="classestaken"></p>
+		</div>
+	</section>
+
+	<footer>
+		<p id="jstest"></p>
+	</footer>
+
+</body>
+</html>
+<script type="text/javascript" src="main.js?v=1.2"></script>
+
+<script>
+	var fname = getParameterByName('fname');
+	var lname = getParameterByName('lname');
+	var gender = getParameterByName('gender');
+	var math = getParameterByName('math');
+	var science = getParameterByName('science');
+	var history = getParameterByName('history');
+	document.getElementById("fullname").innerHTML = "Hello " + fname + " " + lname;
+	document.getElementById("genderselected").innerHTML = "You have selected " + gender + " as your gender.";
+    document.getElementById("classestaken").innerHTML = "You have said you are requesting help with these classes: " + math + " " + science + " " + history;
+</script>
